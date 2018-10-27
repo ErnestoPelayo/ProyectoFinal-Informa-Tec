@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ProyectoFinal</string>
-    <string name="item_1">Novedades</string>
-    <string name="item_2">Conferencias</string>
+    <string name="s_home">Inicio</string>
+    <string name="s_conctest">Concursos</string>
+    <string name="s_confere">Conferencias</string>
 
 </resources>

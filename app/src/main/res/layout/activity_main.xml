@@ -8,43 +8,53 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/image_view_banner"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_view_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Novedades"
-        android:textSize="24sp"
-        tools:text="@string/item_1" />
+        <ImageView
+            android:id="@+id/image_View_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageView
-        android:id="@+id/image_view_n"
-        android:layout_width="match_parent"
-        android:layout_height="137dp"
-        app:srcCompat="@mipmap/ic_launcher" />
+        <ImageView
+            android:id="@+id/image_View_general"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            app:srcCompat="@mipmap/ic_launcher" />
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="213dp" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="205dp" />
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@layout/menu" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/btn_send_press_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/s_home" />
 
+            <Button
+                android:id="@+id/btn_send_press_confe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/s_confere" />
 
+            <Button
+                android:id="@+id/btn_send_press_contest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/s_conctest" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
