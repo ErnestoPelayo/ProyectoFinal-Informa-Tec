@@ -2,7 +2,6 @@
     <string name="app_name">Informa-Tec</string>
     <string name="s_nove">Novedades</string>
     <string name="s_home">Inicio</string>
-    <string name="s_conctest">Concursos</string>
-    <string name="s_confere">Conferencias</string>
-
+    <string name="s_contest">Concursos</string>
+    <string name="s_conference">Conferencias</string>
 </resources>

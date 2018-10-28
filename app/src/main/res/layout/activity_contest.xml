@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,59 +9,51 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/image_View_banner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher" />
 
-        <ImageView
-            android:id="@+id/image_View_banner"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            app:srcCompat="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/text_View_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/image_View_general"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-78dp"
+        android:gravity="center"
+        android:text="@string/s_contest" />
 
-        <TextView
-            android:id="@+id/text_View_tittle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/s_conctest" />
+    <ImageView
+        android:id="@+id/image_View_general"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="79dp"
+        app:srcCompat="@mipmap/ic_launcher" />
 
-        <ImageView
-            android:id="@+id/image_View_general"
-            android:layout_width="match_parent"
-            android:layout_height="192dp"
-            app:srcCompat="@mipmap/ic_launcher" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="330dp" />
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="205dp" />
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginBottom="0dp"
+        app:menu="@menu/nav_items" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_send_press_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/s_home" />
-
-            <Button
-                android:id="@+id/btn_send_press_confe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/s_confere" />
-
-            <Button
-                android:id="@+id/btn_send_press_contest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/s_conctest" />
-        </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
