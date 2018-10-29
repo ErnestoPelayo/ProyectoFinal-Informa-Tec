@@ -4,12 +4,15 @@
 
 
     <item
+        android:id="@+id/nav_home"
         android:icon="@drawable/baseline_home_black_18dp"
         android:title="@string/s_home" />
     <item
+        android:id="@+id/nav_contest"
         android:icon="@drawable/baseline_date_range_black_18dp"
         android:title="@string/s_contest" />
     <item
+        android:id="@+id/nav_conference"
         android:icon="@drawable/baseline_book_black_18dp"
         android:title="@string/s_conference" />
 </menu>
